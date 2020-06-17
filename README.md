@@ -48,3 +48,7 @@ IP or location of your database, in this case is in localhost, is a local databa
 ```
 DATABASE_LOCATION = localhost
 ```
+
+## Database configuration
+In the database folder is a db.sql file, there are all the SQL instructions to 
+configure the database.
