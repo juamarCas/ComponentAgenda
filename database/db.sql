@@ -26,17 +26,12 @@ CREATE TABLE components(
     reference VARCHAR(60),
     package VARCHAR(60),
     pinTecnology VARCHAR(60) NOT NULL,
-    pdfUrl VARCHAR(255),
-    imgUrl VARCHAR(255),
-    schemaUrl VARCHAR(255),
-    user_id INT(11) NOT NULL,
-    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) 
-    
+    imgUrl VARCHAR(255)   
 );
 
 ALTER TABLE components 
     ADD PRIMARY KEY (id);
 
-ALTER TABLE users
+ALTER TABLE components
     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2; 
 
